@@ -14,6 +14,7 @@ Pour fermer l'utilitaire Phipy Buddy™, 3 solutions s'offrent à vous :
 - Joue de la musique
 - Se téléporte
 - A parfois besoin de s'imposer ou de se faire discret
+- Donner à Phipy de l'attention, Phipy vous le rendra
 - Sa présence vous rassure
 ___
 Description 🇬🇧/🇺🇸
