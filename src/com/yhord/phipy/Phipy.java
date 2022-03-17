@@ -63,7 +63,7 @@ public class Phipy extends JFrame {
     }
 
     public void callRandomEvent() {
-        int num = 5;//random(1, 5);
+        int num = random(1, 5);
         System.out.print("Event: ");
         switch (num) {
             case 1 -> { // Eyebrow animations

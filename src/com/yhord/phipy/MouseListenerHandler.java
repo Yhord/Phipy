@@ -40,11 +40,11 @@ public class MouseListenerHandler implements MouseListener, MouseMotionListener 
                 }
             }
             else if (nbClick < 201) {
-                if (nbClick == 20) {
+                if (nbClick == 10) {
                     phipy.setWaitMax(20000);
-                } else if (nbClick == 40) {
+                } else if (nbClick == 20) {
                     phipy.setWaitMin(2000);
-                } else if (nbClick == 100) {
+                } else if (nbClick == 40) {
                     phipy.setWaitMax(10000);
                 } else if (nbClick == 200) {
                     phipy.setWaitMax(8000);
