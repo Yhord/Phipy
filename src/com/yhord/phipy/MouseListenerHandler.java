@@ -30,26 +30,26 @@ public class MouseListenerHandler implements MouseListener, MouseMotionListener 
                 if (nbClick == nbClickRequired) {
                     System.exit(0);
                 } else if (nbClick > 690) {
-                    phipy.superTeleport();
+                    phipy.eventSuperTeleport();
                 } else {
                     phipy.teleport();
-                    if (nbClick == 680) {
-                        phipy.setWaitMin(1000);
-                        phipy.setWaitMax(5000);
-                    }
                 }
             }
-            else if (nbClick < 201) {
-                if (nbClick == 10) {
-                    phipy.setWaitMax(20000);
-                } else if (nbClick == 20) {
-                    phipy.setWaitMin(2000);
-                } else if (nbClick == 40) {
-                    phipy.setWaitMax(10000);
-                } else if (nbClick == 200) {
-                    phipy.setWaitMax(8000);
+            else if (nbClick < 21) {
+                if (nbClick < 9) {
+                    if (nbClick == 2) {
+                        phipy.setWaitMax(10000);
+                    } else if (nbClick == 4) {
+                        phipy.setWaitMin(2000);
+                    } else if (nbClick == 8) {
+                        phipy.setWaitMax(8000);
+                    }
                 }
-        }
+                else if (nbClick == 20) {
+                    phipy.setWaitMin(1000);
+                    phipy.setWaitMax(5000);
+                }
+            }
     }
 
     @Override
@@ -81,6 +81,7 @@ public class MouseListenerHandler implements MouseListener, MouseMotionListener 
     @Override
     public void mouseDragged(MouseEvent e) {
         phipy.getMainLabel().setLocation(this.x + (e.getXOnScreen() - this.scrX), this.y + (e.getYOnScreen() - this.scrY));
+        phipy.repaint();
     }
 
     @Override
